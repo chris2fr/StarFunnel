@@ -16,10 +16,12 @@ const url = Astro.site;
 const config = {
   locale: lang,
   site_url: url,
-  logo_url: "https://starfunnel.unfolding.io/logo.svg",
-  local_backend: true,
+  logo_url: "https://www.lesgrandsvoisins.com/media/images/lesgrandsvoisins.original.png",
+  local_backend: false,
   backend: {
-    name: "test-repo",
+    name: "github",
+    repo: "chris2fr/astro-starfunnel-staticcms",
+    branch: "lesgv"
   },
   search: true,
   media_folder: "src/assets",
