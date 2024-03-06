@@ -17,12 +17,15 @@ const config = {
   locale: lang,
   site_url: url,
   logo_url: "https://www.lesgrandsvoisins.com/media/images/lesgrandsvoisins.original.png",
-  local_backend: false,
+  local_backend: true,
   backend: {
-    name: "github",
-    repo: "chris2fr/astro-starfunnel-staticcms",
-    branch: "lesgv"
+    name: 'git-gateway',
   },
+  // backend: {
+  //   name: "github",
+  //   repo: "chris2fr/astro-starfunnel-staticcms",
+  //   branch: "lesgv"
+  // },
   search: true,
   media_folder: "src/assets",
   public_folder: "/src/assets",
@@ -39,7 +42,7 @@ const config = {
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>StarFunnel Admin | by unfolding.io</title>
+    <title>Admin | by lesgrandsvoisins.com</title>
     <link
       rel="stylesheet"
       href={`https://unpkg.com/@staticcms/app@^${cmsVersion}/dist/main.css`}
