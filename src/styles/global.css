@@ -230,13 +230,16 @@ body {
     --spacing: 2rem;
   }
 
-  
-
-
   font-family: fengardoneue, "DM Sans Variable", "Adjusted Arial Fallback", "arial",
     sans-serif;
   --container-spacing: calc(var(--spacing) * 2);
   --grid-spacing: calc(var(--spacing) / 2);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: lack, fengardoneue, "DM Sans Variable", "Adjusted Arial Fallback", "arial",
+  sans-serif;
+  /* clear: both; */
 }
 
 .container {
