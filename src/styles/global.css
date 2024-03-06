@@ -297,6 +297,9 @@ h1, h2, h3, h4, h5, h6 {
 .font-semibold {
   font-variation-settings: "wght" 600;
 }
+.font-underline {
+  text-decoration: underline;
+}
 .font-bold {
   font-variation-settings: "wght" 700;
 }
@@ -347,7 +350,8 @@ h1, h2, h3, h4, h5, h6 {
 /* MARKDOWN HTML */
 .richtext {
   a:not([class]) {
-    @apply font-semibold;
+    /* @apply font-semibold; */
+    @apply font-underline;
     padding-bottom: 0.1em;
     background: linear-gradient(90deg, currentColor, currentColor) no-repeat
       right bottom / 0 var(--bg-h);
@@ -421,6 +425,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   blockquote {
     @apply mx-0 my-8 border-l-4 border-primary py-0 pl-8 pr-0 text-2xl font-semibold italic;
+    /* @apply mx-0 my-8 border-l-4 border-primary py-0 pl-8 pr-0 text-2xl italic; */
   }
   ul:not([class]) {
     @apply list-disc;
@@ -450,7 +455,8 @@ h1, h2, h3, h4, h5, h6 {
 /* BUTTONS */
 
 .btn {
-  @apply relative inline-flex gap-2 overflow-hidden whitespace-nowrap rounded-full px-2.5 py-1 text-sm font-semibold  outline-offset-4 transition-all duration-200  hover:bg-opacity-90 hover:shadow-md disabled:pointer-events-none disabled:opacity-50 disabled:grayscale;
+  /* @apply relative inline-flex gap-2 overflow-hidden whitespace-nowrap rounded-full px-2.5 py-1 text-sm font-semibold  outline-offset-4 transition-all duration-200  hover:bg-opacity-90 hover:shadow-md disabled:pointer-events-none disabled:opacity-50 disabled:grayscale; */
+  @apply relative inline-flex gap-2 overflow-hidden whitespace-nowrap rounded-full px-2.5 py-1 text-sm font-underline outline-offset-4 transition-all duration-200  hover:bg-opacity-90 hover:shadow-md disabled:pointer-events-none disabled:opacity-50 disabled:grayscale;
   &.btn-absolute {
     @apply absolute;
   }
