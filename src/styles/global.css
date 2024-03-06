@@ -2,7 +2,74 @@
 
 @layer base {
   :root {
+    /* https://mycolor.space/?hex=%23F4B5B3&sub=1 */
+
+
+
+
+    /* --color-accent: 81 33 34;
+    --color-primary: 236 72 67;
+    --color-secondary: 0 117 171;
+    --color-warning: 179 86 88;
+    --color-danger: 179 25 28;
+    --color-success: 66 195 255;
+    --color-dark: 42 40 38;
+    --color-light: 255 255 255;
+    --color-info: 42 40 38; */
+
+    /* https://coolors.co/f4b5b3-79b87e-59aaee-ffffff-000000 */
+
+    /* CSS HEX */
+    /* 
+    --melon: #f4b5b3ff;
+    --mantis: #79b87eff;
+    --argentinian-blue: #59aaeeff;
+    --white: #ffffffff;
+    --black: #000000ff; */
+
+    
+      /* SCSS RGB */
+      --melon: 244, 181, 179;
+      --mantis: 121, 184, 126;
+      --argentinian-blue: 89, 170, 238;
+      --white: 255, 255, 255;
+      --black: 0, 0, 0;
+
+      --hex-melon1: #f4b5b3ff;
+      --hex-caput-mortuum: #512122ff;
+      --hex-honolulu-blue: #0075abff;
+      --hex-antique-white: #feebd6;
+
+      --melon: #f4b5b3ff;
+      --mantis: #79b87eff;
+      --argentinian-blue: #59aaeeff;
+
+
+      
+      --color-primary: 0 146 11;
+      --color-secondary: 24 150 255;
+    --color-accent: 127 57 54;
+    --color-warning: 59 107 148;
+    --color-danger: 179 32 27;
+    --color-success: 53 142 61;
+    --color-dark: 13 27 35;
+    --color-light: 255 255 255;
+    --color-info: 13 27 35; 
+
+
     --font-var-settings-headings: "wght" 700, "opsz" 9;
+
+    /* --color-primary: #512122;
+    --color-secondary: #f4b5b3;
+    --color-accent: #0075ab;
+    --color-warning: #B35658;
+    --color-danger: #B3191C;
+    --color-success: #42C3FF;
+    --color-dark: #2A2826;
+    --color-light: #feebd6;
+    --color-info: #2A2826; */
+
+    /* --font-var-settings-headings: "wght" 700, "opsz" 9;
     --color-primary: 243 76 24;
     --color-secondary: 250 195 12;
     --color-accent: 52 62 112;
@@ -11,7 +78,7 @@
     --color-success: 77 137 101;
     --color-dark: 25 28 38;
     --color-light: 255 255 255;
-    --color-info: 25 28 38;
+    --color-info: 25 28 38; */
 
     --spacing: 1rem;
     --radius: 3rem;
@@ -36,7 +103,18 @@
   }
 
   [data-theme="dark"] {
-    --color-primary: 243 76 24;
+
+    --color-primary: 0 146 11;
+    --color-secondary: 24 150 255;
+  --color-accent: 127 57 54;
+  --color-warning: 59 107 148;
+  --color-danger: 179 32 27;
+  --color-success: 53 142 61;
+  --color-dark: 13 27 35;
+  --color-light: 255 255 255;
+  --color-info: 13 27 35; 
+
+    /* --color-primary: 243 76 24;
     --color-secondary: 250 195 12;
     --color-accent: 52 62 112;
     --color-warning: 202 121 45;
@@ -44,7 +122,18 @@
     --color-success: 77 137 101;
     --color-dark: 25 28 38;
     --color-light: 255 255 255;
-    --color-info: 25 28 38;
+    --color-info: 25 28 38; */
+
+    /* --color-primary: #512122;
+    --color-secondary: #f4b5b3ff;
+    --color-accent: #0075ab;
+    --color-warning: #B35658;
+    --color-danger: #B3191C;
+    --color-success: #42C3FF;
+    --color-dark: #2A2826;
+    --color-light: #feebd6;
+    --color-info: #2A2826; */
+
   }
 }
 html {
@@ -140,7 +229,11 @@ body {
   @screen xs {
     --spacing: 2rem;
   }
-  font-family: "DM Sans Variable", "Adjusted Arial Fallback", "arial",
+
+  
+
+
+  font-family: fengardoneue, "DM Sans Variable", "Adjusted Arial Fallback", "arial",
     sans-serif;
   --container-spacing: calc(var(--spacing) * 2);
   --grid-spacing: calc(var(--spacing) / 2);
